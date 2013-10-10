@@ -3,7 +3,7 @@ package com.stepinfo.springGroovyMaven;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service(value = "anyService")
+@Service(value = "stepService")
 /**
  * @author Jonathan LALOU
  */
