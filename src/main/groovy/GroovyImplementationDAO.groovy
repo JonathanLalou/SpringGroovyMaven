@@ -4,16 +4,16 @@ package com.stepinfo.springGroovyMaven
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 
-@Component(value = "anyDao")
+@Component(value = "stepDAO")
 /**
  * Fake-DAO
  * @author Jonathan LALOU
  */
-class GroovyDAO implements AnyDao {
+class GroovyImplementationDAO implements StepDAO {
 
     @Value("*** 'any data' retrieved by Groovy / Spring annotation ***")
     /**
-     * Implements AnyDao.getAnyString()
+     * Implements StepDAO.getAnyString()
      */
     String anyString
 }

@@ -9,10 +9,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainClass {
     public static void main(String[] args) {
         final ApplicationContext applicationContext;
-        final AnyService anyService;
+        final StepService stepService;
 
         applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-        anyService = (AnyService) applicationContext.getBean("anyService");
-        anyService.anyMethod();
+        stepService = (StepService) applicationContext.getBean("stepService");
+        stepService.anyMethod();
     }
 }

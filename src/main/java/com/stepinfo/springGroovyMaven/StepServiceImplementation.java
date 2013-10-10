@@ -7,16 +7,16 @@ import org.springframework.stereotype.Service;
 /**
  * @author Jonathan LALOU
  */
-public class AnyServiceImplementation implements AnyService {
+public class StepServiceImplementation implements StepService {
 
     @Autowired
-    private AnyDao anyDao;
+    private StepDAO stepDAO;
 
-    public void setAnyDao(AnyDao anyDao) {
-        this.anyDao = anyDao;
+    public void setStepDAO(StepDAO stepDAO) {
+        this.stepDAO = stepDAO;
     }
 
     public void anyMethod() {
-        System.out.println(anyDao.getAnyString());
+        System.out.println(stepDAO.getAnyString());
     }
 }

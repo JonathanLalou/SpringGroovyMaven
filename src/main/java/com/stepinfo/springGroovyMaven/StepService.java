@@ -3,6 +3,6 @@ package com.stepinfo.springGroovyMaven;
 /**
  * @author Jonathan LALOU
  */
-public interface AnyService {
+public interface StepService {
     void anyMethod();
 }
